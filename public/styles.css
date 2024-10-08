@@ -9,10 +9,20 @@ body, html {
 .container {
   display: grid;
   grid-template-areas:
-    'penalty player'
-    'controls controls';
-  grid-template-rows: 1fr auto;
+    'penalty'
+    'player'
+    'controls';
+  grid-template-rows: 1fr 1fr auto;
   height: 100vh;
+}
+
+@media screen and (min-width: 800px;) {
+  .container {
+    grid-template-areas:
+      'penalty player'
+      'controls controls';
+    grid-template-rows: 1fr auto;
+  }
 }
 
 .column {
