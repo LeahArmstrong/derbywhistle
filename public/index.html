@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Roller Derby Officials Training App</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="container">
+    <div class="column" id="penaltyColumn">
+      <div id="penaltyText">
+      </div>
+      <img class="hidden" id="penaltyImage">
+    </div>
+    <div class="column" id="playerColumn"></div>
+    <!-- <div class="column" id="numberColumn"></div> -->
+    <div id="controls">
+      <input id="enablePenaltyImage" type="checkbox">
+      <label for="enablePenaltyImage">
+        Enable Images
+      </label>
+      <input id="enablePenaltyName" type="checkbox" checked>
+      <label for="enablePenaltyName">
+        Enable Penalty Names
+      </label>
+    </div>
+  </div>
+
+  <script src="/socket.io/socket.io.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>
+
